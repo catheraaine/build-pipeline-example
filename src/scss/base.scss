@@ -1,3 +1,44 @@
-html {
-  background-color: #e2e2e2;
+$c-metal: #012A36;
+$c-rose: #B4436C;
+$c-mint: #BDEDE0;
+$c-petal: #FFD3E8;
+$c-linen: #FFD7D5;
+
+html, body {
+  height: 100%;
 }
+
+body {
+  margin: 0;
+  color: $c-metal;
+  background: $c-mint;
+  background: fixed no-repeat linear-gradient(180deg, rgba(189,237,224,1) 15%, rgba(255,211,232,1) 45%, rgba(255,215,213,1) 85%);
+}
+
+main,
+header,
+footer {
+  max-width: 85rem;
+  margin: 2rem;
+}
+
+header {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.image-container {
+  margin: 0 auto;
+  max-width: 40%;
+  margin-top: 4rem;
+  padding: 0;
+
+
+  img {
+    width: 100%;
+    border: 4px dashed $c-rose;
+    border-radius: 20%;
+
+  }
+}
+
